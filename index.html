@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <h1><b><center><u>  Mr. Mokami's Livestock Record.      </u>  </centre></b></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="BreedNo">Breed No</label>
+                        <input type="number" name="BreedNo" id="BreedNo">
+                    </div>
+                    <div>
+                        <label for="AnimalName">Animal Name</label>
+                        <input type="text" name="AnimalName" id="AnimalName">
+                    </div>
+                    <div>
+                        <label for="Quantity">Weight(In kilograms)</label>
+                        <input type="number" name="Quantity" id="Quantity">
+                    </div>
+                    <div>
+                        <label for="age">Age (In months)</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Breed No</th>
+                                <th>Animal Name</th>
+                                <th>Quantity</th>
+                                <th>Age (In months)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="crude.js"></script>
+</body>
+</html>
